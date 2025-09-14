@@ -38,9 +38,10 @@
     
     <!-- Esse e um exemplo de JavaScript dentro do HTML e para ser usado deve começar com <script> -->
     <script>
-        window.alert('Minha Primeira Menasagem! ')
-        window.confirm('Pode confirmar a mensagem? ')
-        window.prompt('Qual e o meu nome? ')
+        var n1 = Number(window.prompt('digite um numero: '));
+        var n2 = Number(window.prompt('Digite o seu segundo numero: '));
+        var tot = n1 + n2;
+        window.alert(`A soma do numero ${n1} e ${n2} e igual a ${tot}`);
     </script>
 </body>
 

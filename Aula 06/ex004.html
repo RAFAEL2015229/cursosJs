@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            font: normal 20pt sans-serif; 
+        }
+
+        h1 {
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+        h1:hover {
+            color: rgb(53, 12, 165);
+            transform: rotate3d(0,0,0, 60deg);
+        }
+
+        .box {
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transform: rotate3d(0, 0, 0, 0deg);
+            /* Estado inicial */
+        }
+
+        .box:hover {
+            color: rgb(1, 1, 2);
+            transform: rotate3d(0, 0, 0, 60deg);
+            /* Estado final */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Esse e o meu title </h1>
+    <div class="box">
+        <p> <strong>Esse e o meu paragrafo de teste para ver aonde aparece o script</strong></p>
+    </div>
+
+    <script>
+        var nome = window.prompt('Qual e o seu nome?');
+        document.write(`Ola ${nome}! seu nome tem ${nome.length} letras.<br/>`);
+        document.write(`E seu nome com letras maiusculas fica ${nome.toUpperCase()}<br/> `);
+        document.write(`E o seu nome com letras minusculas fica ${nome.toLowerCase()}<br/> `);
+
+    </script>
+</body>
+
+</html>
