@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            background-color: rgb(79, 194, 247);
+            color: black;
+            font: 12pt arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .click {
+            text-align: center;
+        }
+        .mudar {
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Iniciando estudos com DOM </h1>
+    <p> Aqui vai o Resultado</p>
+    <p> Aprendendo a usa o <strong> DOM </strong> em javascript. </p>
+    <div class="click"> <strong> Clique em mim </strong> </div>
+    <div id="te" class="mudar"> <strong> Clique em mim </strong> </div>
+    <script>
+        var corpo = window.document.body 
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var click = window.document.getElementsByTagName('div')[0]
+        corpo.style.background = ''
+        click.style.color = 'blue'
+        p1.style.color = 'blue'
+
+        // fazendo atravez de query selector 
+        var d = window.document.querySelector('div.click') 
+        /* Usar o '.' quando for uma 'class' caso seja um 'ID' tera que ser em '#' */
+        var o = window.document.querySelector('div#te') 
+        d.style.color = 'red'
+        o.style.color = 'red'
+    </script>
+</body>
+
+</html>
