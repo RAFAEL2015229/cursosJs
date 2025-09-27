@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,45 +13,133 @@
         background-color: black;
         color: white;
         text-align: center;
+        position: relative;
     }
+
     h1 {
         text-align: center;
     }
+
     input {
         font: normal 12pt arial;
         width: 100px;
+
+        background-color: white;
     }
+
     .test {
         text-align: center;
     }
+
     div#res {
         margin-top: 20px;
+        padding: 10px;
     }
-    
-    
+
+    div#result {
+        padding: 15px;
+    }
+
+    div#resultado {
+        padding: 15px;
+    }
+
+    @keyframes mover {
+        0% {
+            left: 0;
+            background-color: black;
+        }
+
+        80% {
+            left: 80;
+            background-color: rgb(11, 11, 128);
+        }
+    }
+
+    .testee {
+        width: 500px;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+        
+        animation: mover;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+
 </style>
 
 <body>
-    <h1>Somando Valores</h1>
+    <h1 class="testee">Somando Valores </h1>
 
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()" >
+    <input type="button" value="Somar" onclick="somar()">
+
 
     <div id="res" class="test">
         Resultado
     </div>
-    
+
+    <h1 class="testee"> Subtraindo Valores </h1>
+
+    <input type="number" name="txtn3" id="txtn3"> -
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+
+    <div id="result" class="teste">
+        Resultado
+    </div>
+
+    <h1 class="testee"> Multiplicando Valores </h1>
+
+    <input type="number" name="txtn5" id="txtn5">
+    <input type="number" name="txtn6" id="txtn6">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+
+    <div id="resultado">
+        Resultado
+    </div>
+
     <script>
         function somar() {
-            var tn1 = window.document.getElementById('txtn1') 
+            var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.querySelector('input#txtn2')
-            var n1 = Number (tn1.value)
-            var n2 = Number (tn2.value)
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
             var s = n1 + n2
             res.innerHTML = `A soma entre ${n1} e entre ${n2} fica <strong>${s}</strong> `
         }
+
+        function subtrair() {
+            var sub1 = window.document.querySelector('input#txtn3')
+            var sub2 = window.document.querySelector('input#txtn4')
+
+            var n1 = Number(sub1.value)
+            var n2 = Number(sub2.value)
+
+            var s = n1 - n2
+            result.innerHTML = `Subtraindo o valor entre o numero ${n1} e ${n2} o valor fica <strong> ${s} </strong>`
+        }
+
+        function multiplicar() {
+            var multi1 = window.document.querySelector('input#txtn5')
+            var multi2 = window.document.querySelector('input#txtn6')
+
+            var n1 = Number(multi1.value)
+            var n2 = Number(multi2.value)
+
+            var s = n1 * n2
+            resultado.innerHTML = `A Multiplicação entre ${n1} e o valor ${n2} multiplicando fica <strong> ${s} </strong>`
+        }
+
     </script>
-    
+
 </body>
+
 </html>
