@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu País </title>
+</head>
+<style>
+    body {
+        background-color: rgb(146, 151, 114);
+        font: normal 10pt arial;
+        color: rgb(0, 0, 0);
+        position: relative;
+        text-align: center;
+    }
+
+    @keyframes moves {
+        0% {
+            left: 0;
+            background-color: rgb(251, 255, 0);
+        }
+
+        40% {
+            left: 40;
+            background-color: rgb(87, 66, 179);
+        }
+
+        80% {
+            left: 80;
+            background-color: rgb(26, 230, 7);
+        }
+    }
+
+    h1 {
+        width: 300px;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+
+        animation: moves;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+</style>
+
+<body>
+    <h1> Voce e Brasileiro? </h1>
+    Qual e o seu país? <input type="text" name="txtP" id="txtP">
+    <input type="button" value="Enviar" onclick="Feito()">
+
+    <div id="res">
+
+    <script>
+        function Feito() {
+            var txtPa = window.document.querySelector('input#txtP')
+            var pais = window.document.querySelector('div#res')
+            var pa = String(txtPa.value)
+            var paisDigitado = pa.toLowerCase();
+            
+            pais.innerHTML = `O seu pais e ${pa}`
+  
+            if (paisDigitado == 'brasil') {
+                pais.innerHTML = ` voce e brasileiro!!`
+            } else if (paisDigitado == 'eua') {
+                pais.innerHTML += ` voce e dos EUA! Estados Unidos!`
+            } else {
+                pais.innerHTML += ` voce e estrangeiro!`
+            }
+        }
+    </script>
+
+</body>
+
+</html>
