@@ -9,28 +9,27 @@
     <link rel="stylesheet" href="styles.css">
     <title>Hora do Dia</title>
 </head>
+<!-- onload para fazer uma sincronização com o java script e conseguir fazer a função -->
 
 <body onload="carregar()">
     <header>
         <h1>Hora do Dia! </h1>
     </header>
-
+    <!-- section usando Divs com IDs para sicronizar com o javascript  e importando a base do layout da pagina com a Img-->
     <section>
 
-        <div id="msg">
-           Agora são horas! 
-        </div>
+        <div id="msg"></div>
         <div id="msgs"></div>
         <div id="coda"></div>
-        
         <div id="foto">
-        <img id="img" src="manha.jpg" alt="Foto do dia">
+            <img id="img" src="manha.jpg" alt="Foto do dia">
         </div>
-        
+
     </section>
     <footer>
         <p>&copy copyright</p>
     </footer>
+    <!--Usando "src" para sicronizar com javascript-->
     <script src="script.js"></script>
 </body>
 
