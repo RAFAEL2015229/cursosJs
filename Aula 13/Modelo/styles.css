@@ -1,5 +1,5 @@
 body {
-    font: normal, 10pt, Arial;
+    font: normal 15pt arial;
     color: white;
     background-color: rgb(238, 211, 56);
 }
@@ -14,7 +14,8 @@ section {
     background-color: white;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.616);
     width: 500px;
-    padding: 50px;
+    height: 380px;
+    padding: 30px;
     margin: auto;
     border-radius: 10px;
 }
@@ -25,7 +26,10 @@ section img {
     object-fit: cover;
 }
 div {
-    padding-bottom: 30px;
+    padding: 8px;
+}
+div#coda {
+    padding: 8px;
 }
 
 
