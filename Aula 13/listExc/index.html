@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="lista()">
+    <header>
+        <h1> Lista de Tarefas </h1>
+    </header>
+
+    <section>
+        <p>Tarefas do dia:</p>
+        <input id="text1" type="text">
+        <button type="button" class="btn btn-primary" id="botadd1">Adicionar</button>
+
+        <p>Tarefas do trabalho:</p>
+        <input id="text2" type="text">
+        <button type="button" class="btn btn-primary" id="botadd2">Adicionar</button>
+
+
+        <p>Metas de estudo: </p>
+        <input id="text3" type="text">
+        <button type="button" class="btn btn-primary" id="botadd3">Adicionar</button>
+    </section>
+
+    <ul id="texto"> <h3> Tarefas</h3>
+    <ul id="add1"></ul></ul>
+    <ol id="add2"></ol>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy copyright</p>
+    </footer>
+</body>
+
+</html>

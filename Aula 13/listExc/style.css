@@ -1,0 +1,41 @@
+body {
+    font: normal 12pt arial;
+    background-color: white;
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: rgb(49, 49, 54);
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgb(13, 13, 14);
+}
+ul#texto {
+    background-color: rgb(49, 49, 54);
+    color: white;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+p {
+    margin-right: 170px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+
+}

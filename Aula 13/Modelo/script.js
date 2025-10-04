@@ -14,7 +14,6 @@ function carregar() {
     msg.innerHTML = `Agora são ${hora}:${min} horas!`
     msgs.innerHTML += `E Hoje é dia ${dia}/${mes}/${ano}`
 
-
     /*Definindo "if" para horarios caso seja de Madrugada, Manha, Tarde e Noite */
     if (hora >= 0 && hora < 6) {
         /*Caso Horario seja 00:00 maior ou igual 'e'
