@@ -1,16 +1,17 @@
 body {
     font: normal 12pt arial;
-    background-color: white;
+    background-color: rgb(42, 40, 156);
     color: black;
 }
 
 header {
     text-align: center;
+    color: white;
 }
 
 section {
     background-color: rgb(49, 49, 54);
-    padding: 15px;
+    padding: 10px;
     color: white;
     border-radius: 10px;
     margin: auto;
@@ -19,23 +20,31 @@ section {
     text-align: center;
     box-shadow: 2px 2px 2px rgb(13, 13, 14);
 }
-ul#texto {
+
+
+
+h2 {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+div#box1 {
     background-color: rgb(49, 49, 54);
     color: white;
     width: 400px;
     height: 250px;
-    margin: 20px;
+    margin: auto;
+    padding-left: 15px;
     border-radius: 10px;
-    text-align: center;
+    box-shadow: 2px 2px 2px rgb(13, 13, 14);
 
-}
-
-p {
-    margin-right: 170px;
 }
 
 footer {
-    padding: 10px;
+    margin: auto;
     text-align: center;
-
+    padding: 10px;
+    color: white;
 }

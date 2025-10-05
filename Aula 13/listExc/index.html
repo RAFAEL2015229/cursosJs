@@ -11,41 +11,40 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-
+<!--Estrutura para html, usando (header), (section), (input), (h1,h2), (ul), (li (Vai ser criado no script)), (footer)-->
 <body onload="lista()">
     <header>
         <h1> Lista de Tarefas </h1>
     </header>
 
     <section>
-        <p>Tarefas do dia:</p>
+        <p> <strong> Tarefas do dia: </strong></p>
         <input id="text1" type="text">
-        <button type="button" class="btn btn-primary" id="botadd1">Adicionar</button>
+        <input type="button" value="Adicionar" id="botadd1" class="btn btn-primary">
 
-        <p>Tarefas do trabalho:</p>
+        <p> <strong> Tarefas do trabalho: </strong></p>
         <input id="text2" type="text">
-        <button type="button" class="btn btn-primary" id="botadd2">Adicionar</button>
+        <input type="button" value="Adicionar" id="botadd2" class="btn btn-primary">
 
 
-        <p>Metas de estudo: </p>
+        <p><strong>Metas de estudo: </strong></p>
         <input id="text3" type="text">
-        <button type="button" class="btn btn-primary" id="botadd3">Adicionar</button>
+        <input type="button" value="Adicionar" id="botadd3" class="btn btn-primary">
+
     </section>
 
-    <ul id="texto"> <h3> Tarefas</h3>
-    <ul id="add1"></ul></ul>
-    <ol id="add2"></ol>
+    <h2> Tarefas</h2>
+    <div id="box1">
+        <ul id="box1"></ul>
+        <ul id="add1"></ul>
+        <ul id="add2"></ul>
+        <ul id="add3"></ul></div>
 
+        <script src="script.js"></script>
 
-
-
-
-
-
-    <script src="script.js"></script>
-    <footer>
-        <p>&copy copyright</p>
-    </footer>
+        <footer>
+            &copy copyright
+        </footer>
 </body>
 
 </html>
