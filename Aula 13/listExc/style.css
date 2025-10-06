@@ -1,18 +1,18 @@
 body {
     font: normal 12pt arial;
-    background-color: rgb(42, 40, 156);
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
 header {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 section {
     background-color: rgb(49, 49, 54);
     padding: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     margin: auto;
     width: 400px;
@@ -26,13 +26,13 @@ section {
 h2 {
     margin: auto;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5px;
 }
 
 div#box1 {
     background-color: rgb(49, 49, 54);
-    color: white;
+    color: rgb(255, 255, 255);
     width: 400px;
     height: 250px;
     margin: auto;
@@ -46,5 +46,5 @@ footer {
     margin: auto;
     text-align: center;
     padding: 10px;
-    color: white;
+    color: rgb(27, 27, 27);
 }

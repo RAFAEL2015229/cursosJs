@@ -16,34 +16,55 @@ function lista() {
     botadd2.addEventListener('click', clicar2)
     botadd3.addEventListener('click', clicar3)
 
-//Com a função criada de evento para clicar criei 3 evento e em cada estrutura e usado um if para adicionar uma <li> e caso venha vazio '' aparecera uma alerta de [ERRO].
+    //Com a função criada de evento para clicar criei 3 evento e em cada estrutura e usado um if para adicionar uma <li> e caso venha vazio '' aparecera uma alerta de [ERRO].
     function clicar1() {
         var texto1 = text1.value
-
-        if (texto1 == '' && texto2 == '' && texto3 == '') {
+        if (texto1 == '') {
             window.alert('[ERROR] Voce precisa escrever as tarefas!')
             return;
         } if (texto1 != '') {
             var criarL1 = document.createElement('li')
-            criarL1.innerHTML = `<strong>${texto1}</strong>`
+            var criainput1 = document.createElement('input')
+            criainput1.type = 'checkbox'
+            criarL1.innerHTML = `<input type="checkbox"> <strong>${texto1}</strong>`;
             add1.appendChild(criarL1)
             add1.style.padding = '10px';
+
+            /*botao4.addEventListener('click', clicar4)
+            function clicar4() {
+                if (add1 == 'clicar4') {
+                    
+                }
+            */
         }
     }
     function clicar2() {
         var texto2 = text2.value
+        if (texto2 == '') {
+            window.alert('[ERROR] Voce precisa escrever as tarefas!')
+            return;
+        }
         if (texto2 != '') {
             var criarL2 = document.createElement('li')
-            criarL2.innerHTML = `<strong>${texto2}</strong>`
+            var criainput2 = document.createElement('input')
+            criainput2.type = 'checkbox'
+            criarL2.innerHTML = `<input type="checkbox"><strong>${texto2}</strong>`
             add2.appendChild(criarL2)
             add2.style.padding = '10px';
+
         }
     }
     function clicar3() {
         var texto3 = text3.value
+        if (texto3 == '') {
+            window.alert('[ERROR] Voce precisa escrever as tarefas!')
+            return;
+        }
         if (texto3 != '') {
             var criarL3 = document.createElement('li')
-            criarL3.innerHTML = `<strong>${texto3}</strong>`
+            var criarinput3 = document.createElement('input')
+            criarinput3 = 'checkbox'
+            criarL3.innerHTML = `<input type="checkbox"><strong>${texto3}</strong>`
             add3.appendChild(criarL3)
             add3.style.padding = '10px';
         }
