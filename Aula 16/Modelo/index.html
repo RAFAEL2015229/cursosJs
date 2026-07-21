@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="styles.css">
+    <title> Tabuada </title>
+</head>
+
+<body>
+    <header>
+        <h1>Tabuada! </h1>
+    </header>
+    <!-- section usando Divs com IDs para sicronizar com o javascript  e importando a base do layout da pagina com a Img-->
+    <section>
+
+        <div id="msg">
+            <p>Número:
+                <input type="number" id="numero1">
+                <input type="button" value="Calcular" id="botao" onclick="tabuada()">
+            </p>
+        </div>
+
+        <div id="result"> 
+            <select name="tabuada" id="seltab" size="10" ></select>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy copyright</p>
+    </footer>
+    <!--Usando "src" para sicronizar com javascript-->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Contar Passos! </title>
+</head>
+<!-- onload para fazer uma sincronização comso java script e conseguir fazer a função -->
+
+<body>
+    <header>
+        <h1> Vamos Contar! </h1>
+    </header>
+    <!-- section usando Divs com IDs para sicronizar com o javascript  e importando a base do layout da pagina com a Img-->
+    <section>
+
+        <div id="numero1"> 
+            <p> Inicio:
+            <input type="number" id="txtinicio" placeholder="Digite um Numero">
+            </p>
+
+            <p> Fim:
+             <input type="number" id="txtfim" placeholder="Terminar Contagem">
+            </p>
+            
+            <p> Passo: 
+                <input type="number" id="txtpasso" placeholder="Quantas casas pular">
+            </p>
+        </div>
+
+        <input id="botao" type="button" value="contar" onclick="contar()"></p> 
+        <div id="resultado"></div>
+    </section>
+    <footer>
+        <p>&copy copyright</p>
+    </footer>
+    <!--Usando "src" para sicronizar com javascript-->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -6,7 +6,8 @@ function verificar() {
     var fano = document.getElementById('texta1')
     var res = document.querySelector('div#res')
 
-    //Informação de [ERRO] caso no texto nao ter informação ou estiver vazio ou alem do ano atual ou se passar dos 105 anos (1920) Para printar uma tela de [ERRO]
+    //Informação de [ERRO] caso no texto nao ter informação ou estiver vazio ou alem do ano atual 
+    // ou se passar dos 105 anos (1920) Para printar uma tela de [ERRO]
     if (fano.value.length == 0 || Number(fano.value) > ano || Number(fano.value) < 1920) {
         window.alert('[ERRO] Verifique os dados e tente novamente.')
     } else {
@@ -16,7 +17,8 @@ function verificar() {
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
 
-        //Sistema para identificar a idade da pessoa e informar se e Criança, Jovem adolecente, adulto ou idoso e com base na idade da pessoa sera printado na tela uma imagem conforme a idade! 
+        //Sistema para identificar a idade da pessoa e informar se e Criança, Jovem adolecente, adulto ou idoso
+        // e com base na idade da pessoa sera printado na tela uma imagem conforme a idade! 
         if (fsex[0].checked) {
             genero = 'Homem'
             if (idade >= 0 && idade < 13) {
@@ -54,7 +56,7 @@ function verificar() {
                 //idoso
                 genero = 'idosa'
                 img.setAttribute('src' , 'idosa.jpg')
-            }
+            }   
         }
 
         //Printar na tela Centralizando o Resultado + a imagem que foi importada 
